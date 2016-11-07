@@ -1,0 +1,248 @@
+.form-item {
+  position: relative;
+  padding: 18px 0 0; }
+  .form-item .item-tit {
+    font-size: 14px;
+    line-height: 32px;
+    color: #999; }
+  .form-item.form-item-abs {
+    padding: 50px 0 15px; }
+    .form-item.form-item-abs .item-tit {
+      color: #ccc;
+      position: absolute;
+      height: 32px;
+      line-height: 32px;
+      font-size: 16px;
+      top: 6px;
+      transition: top 0.4s,font-size 0.4s; }
+  .form-item.focus .input-bottom-line {
+    width: 100%; }
+  .form-item.focus .item-tit {
+    color: #70a938; }
+  .form-item.focus.form-item-abs .item-tit {
+    position: absolute;
+    top: -38px;
+    font-size: 14px; }
+  .form-item .item-input-box {
+    position: relative; }
+  .form-item .input-bottom-line {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background: #70a938;
+    left: 0;
+    width: 0;
+    transition: width 0.4s;
+    z-index: 5; }
+  .form-item .textarea-box {
+    margin: 15px 0 0;
+    background: #fafafa; }
+  .form-item .item-input {
+    display: block;
+    width: 100%;
+    background: none;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px dashed #e6e6e6;
+    position: relative;
+    z-index: 2; }
+  .form-item .CheckRadio-box {
+    border-bottom: 2px dashed #e6e6e6;
+    padding: 15px 0; }
+    .form-item .CheckRadio-box.inline-radio .radio-box {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      padding: 0 20px; }
+    .form-item .CheckRadio-box .radio-box {
+      cursor: pointer;
+      line-height: 40px;
+      color: #666; }
+      .form-item .CheckRadio-box .radio-box:active {
+        background: #f7f7f7; }
+      .form-item .CheckRadio-box .radio-box .iconfont {
+        vertical-align: top;
+        margin: 0 10px 0 0; }
+      .form-item .CheckRadio-box .radio-box .radio-text {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top; }
+  .form-item .img-list .img-item {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 15px 15px 0;
+    border-radius: 3px;
+    border: 5px solid #eee; }
+    .form-item .img-list .img-item.sel {
+      border: 5px solid #70a938; }
+    .form-item .img-list .img-item .close {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: -15px;
+      top: -15px;
+      background: #000;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      opacity: 0.8;
+      font-weight: normal;
+      border-radius: 100%; }
+    .form-item .img-list .img-item .img {
+      width: 100%;
+      height: 100%; }
+    .form-item .img-list .img-item .bg {
+      position: absolute;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      width: 100%;
+      left: 0;
+      opacity: 1;
+      color: #fff;
+      cursor: pointer; }
+    .form-item .img-list .img-item .file-status {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 30px;
+      line-height: 30px;
+      background: #333;
+      color: #fff;
+      text-align: center;
+      opacity: 0.7;
+      filter: alpha(opacity=70); }
+
+.setContBox {
+  width: 320px;
+  min-height: 468px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding: 10px; }
+  .setContBox .img-box img {
+    max-width: 100%; }
+  .setContBox .text-box {
+    line-height: 2; }
+  .setContBox .item-box {
+    position: relative;
+    margin: 0 0 5px; }
+    .setContBox .item-box:hover .edit_mask {
+      display: block; }
+  .setContBox .edit_mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(229, 229, 229, 0.85) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#d9e5e5e5',endcolorstr = '#d9e5e5e5');
+    text-align: center;
+    display: none;
+    top: 0;
+    left: 0; }
+    .setContBox .edit_mask .vm_box {
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+      display: inline-block; }
+    .setContBox .edit_mask .iconfont {
+      vertical-align: middle;
+      display: inline-block;
+      margin: 5px 10px;
+      font-size: 24px;
+      line-height: 1;
+      color: #999; }
+  .setContBox .addBtnBox {
+    border: 1px dashed #ccc;
+    height: 80px;
+    text-align: center; }
+    .setContBox .addBtnBox .jia-btn {
+      font-size: 40px;
+      font-weight: bolder;
+      line-height: 70px;
+      color: #e6e6e6; }
+    .setContBox .addBtnBox:hover .item-btn-box {
+      display: block; }
+    .setContBox .addBtnBox:hover .jia-btn {
+      display: none; }
+    .setContBox .addBtnBox .item-btn-box {
+      display: none; }
+      .setContBox .addBtnBox .item-btn-box .item-btn {
+        height: 80px;
+        display: inline-block;
+        width: 80px;
+        color: #999;
+        cursor: pointer;
+        margin: 0 20px; }
+        .setContBox .addBtnBox .item-btn-box .item-btn:hover {
+          color: #70a938; }
+        .setContBox .addBtnBox .item-btn-box .item-btn .iconfont {
+          padding-top: 10px;
+          display: block;
+          font-size: 40px;
+          line-height: 1;
+          text-align: center; }
+
+.webuploader-element-invisible {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer; }
+
+.webuploader-container {
+  cursor: pointer; }
+  .webuploader-container div {
+    width: 100% !important;
+    height: 100% !important; }
+
+.breadcrumbs {
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 30px 0 0; }
+  .breadcrumbs .current,
+  .breadcrumbs .current:hover {
+    font-weight: bold;
+    background: none; }
+  .breadcrumbs .current::after,
+  .breadcrumbs .current::before {
+    content: normal; }
+  .breadcrumbs .item {
+    float: left;
+    margin: 0 .5em 0 1em; }
+    .breadcrumbs .item a {
+      min-width: 100px;
+      text-align: center;
+      background: #ddd;
+      padding: .7em 3em;
+      float: left;
+      text-decoration: none;
+      color: #444;
+      position: relative; }
+      .breadcrumbs .item a:hover, .breadcrumbs .item a.active {
+        background: #ffb200; }
+        .breadcrumbs .item a:hover::before, .breadcrumbs .item a.active::before {
+          border-color: #ffb200 #ffb200 #ffb200 transparent; }
+        .breadcrumbs .item a:hover::after, .breadcrumbs .item a.active::after {
+          border-left-color: #ffb200; }
+      .breadcrumbs .item a::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -1.5em;
+        border-width: 1.5em 0 1.5em 1em;
+        border-style: solid;
+        border-color: #ddd #ddd #ddd transparent;
+        left: -1em; }
+      .breadcrumbs .item a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -1.5em;
+        border-top: 1.5em solid transparent;
+        border-bottom: 1.5em solid transparent;
+        border-left: 1em solid #ddd;
+        right: -1em; }
+
+/*# sourceMappingURL=form.css.map */
